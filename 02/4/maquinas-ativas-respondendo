@@ -1,0 +1,782 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2019-11-11 17:37 -03
+Nmap scan report for 192.168.32.14
+Host is up (0.0014s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  open   netbios-ssn
+443/tcp  closed https
+445/tcp  open   microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.15
+Host is up (0.00064s latency).
+
+PORT     STATE  SERVICE
+21/tcp   open   ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  open   https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.16
+Host is up (0.00074s latency).
+
+PORT     STATE  SERVICE
+21/tcp   open   ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  open   https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.31
+Host is up (0.0015s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.33
+Host is up (0.0016s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.35
+Host is up (0.0020s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.36
+Host is up (0.0015s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.37
+Host is up (0.0018s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.38
+Host is up (0.0021s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   open   telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.40
+Host is up (0.0017s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   open   telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.51
+Host is up (0.0017s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.52
+Host is up (0.0014s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.70
+Host is up (0.0020s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.248
+Host is up (0.00069s latency).
+
+PORT     STATE  SERVICE
+21/tcp   open   ftp
+22/tcp   open   ssh
+23/tcp   open   telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.32.252
+Host is up (0.00053s latency).
+
+PORT     STATE  SERVICE
+21/tcp   open   ftp
+22/tcp   open   ssh
+23/tcp   open   telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.40.207
+Host is up (0.0013s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for 192.168.40.222
+Host is up (0.026s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.40.243
+Host is up (0.00045s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.40.245
+Host is up (0.00051s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.41.43
+Host is up (0.025s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.41.47
+Host is up (0.0012s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  open     https
+445/tcp  open     microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for johnatas-Inspiron-3421 (192.168.41.55)
+Host is up (0.0012s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.43.51
+Host is up (0.0065s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.43.123
+Host is up (0.0016s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for 192.168.43.142
+Host is up (0.0013s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for 192.168.43.149
+Host is up (0.0014s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for 192.168.43.153
+Host is up (0.0028s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  filtered https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for 192.168.43.160
+Host is up (0.0018s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  open   https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.44.51
+Host is up (0.0015s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.44.185
+Host is up (0.0014s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   open   ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.44.198
+Host is up (0.0020s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  open   microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.44.207
+Host is up (0.00092s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.44.210
+Host is up (0.00099s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.44.213
+Host is up (0.00077s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.44.224
+Host is up (0.0011s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   open   ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.44.227
+Host is up (0.0011s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  open   https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.44.228
+Host is up (0.00050s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  open   netbios-ssn
+443/tcp  closed https
+445/tcp  open   microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.44.230
+Host is up (0.0029s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for 192.168.44.231
+Host is up (0.0015s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for 192.168.44.234
+Host is up (0.0017s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for 192.168.44.255
+Host is up (0.00065s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  open   microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.45.20
+Host is up (0.0012s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.45.136
+Host is up (0.0012s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  open   netbios-ssn
+443/tcp  closed https
+445/tcp  open   microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.45.141
+Host is up (0.0014s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   open   ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  open   https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.45.155
+Host is up (0.0015s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for 192.168.45.188
+Host is up (0.0068s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  filtered https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for 192.168.46.17
+Host is up (0.0028s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for 192.168.46.18
+Host is up (0.0015s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap scan report for 192.168.46.71
+Host is up (0.0013s latency).
+
+PORT     STATE  SERVICE
+21/tcp   open   ftp
+22/tcp   open   ssh
+23/tcp   open   telnet
+25/tcp   closed smtp
+80/tcp   open   http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.46.149
+Host is up (0.0030s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+445/tcp  closed microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.47.19
+Host is up (0.0012s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   closed ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+80/tcp   closed http
+110/tcp  closed pop3
+139/tcp  open   netbios-ssn
+443/tcp  closed https
+445/tcp  open   microsoft-ds
+3389/tcp closed ms-wbt-server
+
+Nmap scan report for 192.168.47.35
+Host is up (0.0016s latency).
+
+PORT     STATE    SERVICE
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   open     http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+
+Nmap done: 4096 IP addresses (52 hosts up) scanned in 68.11 seconds

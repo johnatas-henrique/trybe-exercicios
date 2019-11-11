@@ -1,0 +1,15 @@
+Conexões Internet Ativas (servidores e estabelecidas)
+Proto Recv-Q Send-Q Endereço Local          Endereço Remoto         Estado      
+udp        0      0 localhost:domain        0.0.0.0:*                          
+udp        0      0 johnatas-Inspiro:bootpc 0.0.0.0:*                          
+udp        0      0 johnatas-Inspiro:bootpc 0.0.0.0:*                          
+udp        0      0 0.0.0.0:ipp             0.0.0.0:*                          
+udp        0      0 224.0.0.251:mdns        0.0.0.0:*                          
+udp        0      0 224.0.0.251:mdns        0.0.0.0:*                          
+udp        0      0 224.0.0.251:mdns        0.0.0.0:*                          
+udp        0      0 224.0.0.251:mdns        0.0.0.0:*                          
+udp        0      0 0.0.0.0:mdns            0.0.0.0:*                          
+udp        0      0 johnatas-Inspiron:47221 cb-in-f189.1e100.ne:443 ESTABELECIDA
+udp        0      0 0.0.0.0:52159           0.0.0.0:*                          
+udp6       0      0 [::]:mdns               [::]:*                             
+udp6       0      0 [::]:59203              [::]:*                             

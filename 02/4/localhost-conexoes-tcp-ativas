@@ -1,0 +1,18 @@
+Conexões Internet Ativas (servidores e estabelecidas)
+Proto Recv-Q Send-Q Endereço Local          Endereço Remoto         Estado      
+tcp        0      0 localhost:domain        0.0.0.0:*               OUÇA      
+tcp        0      0 localhost:ipp           0.0.0.0:*               OUÇA      
+tcp        0      0 johnatas-Inspiron:33340 ec2-18-228-99-199:https ESTABELECIDA
+tcp        0      0 johnatas-Inspiron:47164 ec2-52-45-19-11.c:https ESTABELECIDA
+tcp        0      0 johnatas-Inspiron:37626 ec2-18-205-93-210:https ESTABELECIDA
+tcp        0      0 johnatas-Inspiron:57100 172.217.192.188:5228    ESTABELECIDA
+tcp        0      0 johnatas-Inspiron:58342 151.101.129.42:https    ESTABELECIDA
+tcp        0      0 johnatas-Inspiron:39344 108-174-12-129.fw:https ESTABELECIDA
+tcp        0      0 johnatas-Inspiron:41004 server-13-33-129-:https ESTABELECIDA
+tcp        0      0 johnatas-Inspiron:34954 lb-140-82-113-26-:https ESTABELECIDA
+tcp        0      0 johnatas-Inspiron:32898 server-13-33-128-:https ESTABELECIDA
+tcp        0      0 johnatas-Inspiron:59788 ec2-52-202-62-228:https ESTABELECIDA
+tcp        0      0 johnatas-Inspiron:52330 ec2-35-170-0-145.:https ESTABELECIDA
+tcp        0      0 johnatas-Inspiron:36190 whatsapp-cdn-shv-:https ESTABELECIDA
+tcp        0      0 johnatas-Inspiron:42473 23.96.100.225:https     ESTABELECIDA
+tcp6       0      0 ip6-localhost:ipp       [::]:*                  OUÇA      

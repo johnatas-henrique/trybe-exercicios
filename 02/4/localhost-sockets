@@ -1,0 +1,61 @@
+Conexões Internet Ativas (somente servidores)
+Proto Recv-Q Send-Q Endereço Local          Endereço Remoto         Estado      
+tcp        0      0 localhost:domain        0.0.0.0:*               OUÇA      
+tcp        0      0 localhost:ipp           0.0.0.0:*               OUÇA      
+tcp6       0      0 ip6-localhost:ipp       [::]:*                  OUÇA      
+udp        0      0 localhost:domain        0.0.0.0:*                          
+udp        0      0 johnatas-Inspiro:bootpc 0.0.0.0:*                          
+udp        0      0 johnatas-Inspiro:bootpc 0.0.0.0:*                          
+udp        0      0 0.0.0.0:ipp             0.0.0.0:*                          
+udp        0      0 224.0.0.251:mdns        0.0.0.0:*                          
+udp        0      0 224.0.0.251:mdns        0.0.0.0:*                          
+udp        0      0 224.0.0.251:mdns        0.0.0.0:*                          
+udp        0      0 224.0.0.251:mdns        0.0.0.0:*                          
+udp        0      0 0.0.0.0:mdns            0.0.0.0:*                          
+udp        0      0 0.0.0.0:52159           0.0.0.0:*                          
+udp6       0      0 [::]:mdns               [::]:*                             
+udp6       0      0 [::]:59203              [::]:*                             
+raw6       0      0 [::]:ipv6-icmp          [::]:*                  7          
+raw6       0      0 [::]:ipv6-icmp          [::]:*                  7          
+Domain sockets UNIX ativos (somente servidores)
+Proto RefCnt Flags       Type       State         I-Node   Caminho
+unix  2      [ ACC ]     SEQPACKET  OUVINDO       15687    /run/udev/control
+unix  2      [ ACC ]     STREAM     OUVINDO       30216    @/tmp/.ICE-unix/1111
+unix  2      [ ACC ]     STREAM     OUVINDO       29848    /run/user/1000/systemd/private
+unix  2      [ ACC ]     STREAM     OUVINDO       29853    /run/user/1000/gnupg/S.gpg-agent.browser
+unix  2      [ ACC ]     STREAM     OUVINDO       29854    /run/user/1000/pk-debconf-socket
+unix  2      [ ACC ]     STREAM     OUVINDO       29855    /run/user/1000/pulse/native
+unix  2      [ ACC ]     STREAM     OUVINDO       29856    /run/user/1000/snapd-session-agent.socket
+unix  2      [ ACC ]     STREAM     OUVINDO       29857    /run/user/1000/gnupg/S.dirmngr
+unix  2      [ ACC ]     STREAM     OUVINDO       29858    /run/user/1000/gnupg/S.gpg-agent.ssh
+unix  2      [ ACC ]     STREAM     OUVINDO       29859    /run/user/1000/bus
+unix  2      [ ACC ]     STREAM     OUVINDO       29860    /run/user/1000/gnupg/S.gpg-agent.extra
+unix  2      [ ACC ]     STREAM     OUVINDO       29861    /run/user/1000/gnupg/S.gpg-agent
+unix  2      [ ACC ]     STREAM     OUVINDO       29868    /run/user/1000/keyring/control
+unix  2      [ ACC ]     STREAM     OUVINDO       27796    /tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     OUVINDO       28522    /tmp/ssh-bEnZcVaGCRFX/agent.1111
+unix  2      [ ACC ]     STREAM     OUVINDO       30217    /tmp/.ICE-unix/1111
+unix  2      [ ACC ]     STREAM     OUVINDO       30924    /run/user/1000/keyring/ssh
+unix  2      [ ACC ]     STREAM     OUVINDO       30926    /run/user/1000/keyring/pkcs11
+unix  2      [ ACC ]     STREAM     OUVINDO       493487   /tmp/CoreFxPipe_fb0e146fde5342ee936fc18ee89d967b
+unix  2      [ ACC ]     STREAM     OUVINDO       492493   /run/user/1000/vscode-ec5b8ed5-1.39.2-main.sock
+unix  2      [ ACC ]     STREAM     OUVINDO       494540   /run/user/1000/vscode-ec5b8ed5-1.39.2-shared.sock
+unix  2      [ ACC ]     STREAM     OUVINDO       88239    /run/user/1000/keyring/.ssh
+unix  2      [ ACC ]     STREAM     OUVINDO       27795    @/tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     OUVINDO       493479   /run/user/1000/vscode-git-askpass-b5ef42f95c657141a7f66f911ed051ecfb1270fa.sock
+unix  2      [ ACC ]     STREAM     OUVINDO       495222   /tmp/CoreFxPipe_vscode.4e85c24d9c8c0451cdde2408d30cdfbe
+unix  2      [ ACC ]     STREAM     OUVINDO       37584    /tmp/.com.google.Chrome.Y3zuTU/SingletonSocket
+unix  2      [ ACC ]     STREAM     OUVINDO       49278    /tmp/.org.chromium.Chromium.wqr2pJ/SS
+unix  2      [ ACC ]     STREAM     OUVINDO       15647    /run/systemd/private
+unix  2      [ ACC ]     STREAM     OUVINDO       86007    /tmp/qtsingleapp-zoom-3e8
+unix  2      [ ACC ]     STREAM     OUVINDO       15661    /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     OUVINDO       15675    /run/systemd/fsck.progress
+unix  2      [ ACC ]     STREAM     OUVINDO       21210    /run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     OUVINDO       21212    /run/snapd.socket
+unix  2      [ ACC ]     STREAM     OUVINDO       21214    /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     OUVINDO       21216    /run/avahi-daemon/socket
+unix  2      [ ACC ]     STREAM     OUVINDO       21218    /run/uuidd/request
+unix  2      [ ACC ]     STREAM     OUVINDO       21220    /run/acpid.socket
+unix  2      [ ACC ]     STREAM     OUVINDO       278573   /run/cups/cups.sock
+unix  2      [ ACC ]     STREAM     OUVINDO       30905    @/tmp/dbus-l0CVuCkGaC
+unix  2      [ ACC ]     STREAM     OUVINDO       21358    /run/irqbalance//irqbalance714.sock

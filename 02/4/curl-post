@@ -1,0 +1,19 @@
+{
+  "args": {}, 
+  "data": "{\"lastname\":\"Henrique\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Content-Length": "23", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/7.65.3"
+  }, 
+  "json": {
+    "lastname": "Henrique"
+  }, 
+  "method": "POST", 
+  "origin": "45.174.180.0, 45.174.180.0", 
+  "url": "https://httpbin.org/anything"
+}

@@ -1,0 +1,17 @@
+{
+  "args": {
+    "firstname": "Johnatas"
+  }, 
+  "data": "", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/7.65.3"
+  }, 
+  "json": null, 
+  "method": "DELETE", 
+  "origin": "45.174.180.0, 45.174.180.0", 
+  "url": "https://httpbin.org/anything?firstname=Johnatas"
+}
