@@ -4,6 +4,13 @@
     color: whitesmoke;
 }
 
+@font-face {
+    font-family: 'pokemon-hollow';
+    src: url('../fonts/pokemon-hollow.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: lighter;
+}
+
 body {
     font-size: 22px;
     background-color: black;
@@ -13,8 +20,8 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 2em;
-    font-family: 'Mansalva', cursive;
+    font-size: 1.7em;
+    font-family: "pokemon-hollow";
 }
 
 header h1{
@@ -24,7 +31,19 @@ header h1{
 
 h2 {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.6em;
+    font-family: 'Mansalva', cursive;
+    margin: 50px 0 20px 0;
+}
+
+h3 {
+    font-size: 0.9em;
+    padding: 0 20px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 0.7em;
     font-family: 'Mansalva', cursive;
 }
 
@@ -61,10 +80,34 @@ nav ul li a:hover{
     background-color: #0B80B6;
     color: black;
 }
+a {
+    text-decoration: none;
+}
+
+li a h3{
+    padding: 5px 20px;
+    color: white;
+}
+
+li a:hover h3{
+    padding: 5px 20px;
+    color: #0B80B6;;
+}
 
 article {
     width: 60%;
     float: left;
+}
+
+section {
+    margin: 20px 0;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0 20px;
+    margin: 20px 0;
 }
 
 aside {
@@ -75,22 +118,33 @@ aside {
     float: right;
 }
 
+table {
+    margin: 0 auto;
+}
+
+td, th {
+    border: 2px hollow #0B80B6;
+    border-radius: 10px;
+    padding: 0 4px;
+    margin: 0 auto;
+}
+
 footer {
-    border: 3px solid red;
     text-align: center;
+    margin: 50px 0;
 }
 
 .clear {
     clear: both;
 }
 
-.miau-ytb-responsivo{
+.miau-ytb-responsivo {
     position: relative;
     padding-bottom: 56.25%; /* Para o 16/9, número perfeito para aumentar a caixa na medida certa, 100/"16" = 6,25 * "9"=56,25 - Johnatas */
     padding-top: 30px; height: 0; overflow: hidden;
 }
 
-.miau-ytb-responsivo-iframe{
+.miau-ytb-responsivo-iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -98,9 +152,22 @@ footer {
     height: 100%;
 }
 
-p {
-    text-align: justify;
-    text-justify: inter-word;
-    border: 3px solid red;
-    padding: 0 10px;
+.figuras-div {
+    text-align: center;
+    width: 30%;
+}
+
+.figuras {
+    width: 100%;
+}
+
+.float {
+    float:left;
+    padding: 0 20px;
+    margin: 5px 0;
+}
+
+.table-responsiva {
+    overflow-x:auto;
+    margin: 0 20px;
 }
