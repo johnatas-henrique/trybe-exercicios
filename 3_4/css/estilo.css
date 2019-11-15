@@ -1,4 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    color: whitesmoke;
+}
+
+body {
+    font-size: 18px;
+    background-color: cadetblue;
+    background-image: url("../img/bg-animal.jpg");
 }
