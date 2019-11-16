@@ -41,12 +41,6 @@ h3 {
     padding: 0 20px;
 }
 
-h4 {
-    text-align: center;
-    font-size: 0.7em;
-    font-family: 'Mansalva', cursive;
-}
-
 header {
     margin: 40px 5px;
 }
@@ -105,7 +99,6 @@ section {
 
 p {
     text-align: justify;
-    text-justify: inter-word;
     padding: 0 20px;
     margin: 20px 0;
 }
@@ -123,7 +116,7 @@ table {
 }
 
 td, th {
-    border: 2px hollow #0B80B6;
+    border: 2px solid #0B80B6;
     border-radius: 10px;
     padding: 0 4px;
     margin: 0 auto;
@@ -159,6 +152,7 @@ footer {
 
 .figuras {
     width: 100%;
+    border: 1px solid white;
 }
 
 .float {
@@ -170,4 +164,10 @@ footer {
 .table-responsiva {
     overflow-x:auto;
     margin: 0 20px;
+}
+
+.texto-pequeno {
+    text-align: center;
+    font-size: 0.7em;
+    font-family: 'Mansalva', cursive;
 }
