@@ -8,9 +8,9 @@
     <title>Document</title>
     <script>
         let inputUser = prompt('Digite o nome da peça desejada, para ajudar, os nomes das peças são:\nking, queen, rook, bishop, knight, pawn');
-        let aumentaLetra = inputUser.toUpperCase();
+        inputUser = inputUser.toUpperCase();
 
-        switch (aumentaLetra) {
+        switch (inputUser) {
             case 'KING':
                 console.log("Pode mover-se em qualquer direção, porém apenas uma casa por vez.");
                 break;
