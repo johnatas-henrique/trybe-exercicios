@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let inputSalario = prompt('Digite o valor do salário bruto');
+        let aliquotaINSS;
+        let aliquotaIR;
+        let verificaSalario;
+        if (inputSalario < 0) {
+            console.log('Valor inválido');
+        } else {
+            if (inputSalario <= 1556.94) {
+                aliquotaINSS = 0.08 * inputSalario;
+                aliquotaINSS = aliquotaINSS.toFixed(2);
+            } else if (inputSalario <= 2594.92 && inputSalario > 1556.94) {
+                aliquotaINSS = 0.09 * inputSalario;
+                aliquotaINSS = aliquotaINSS.toFixed(2);
+            } else if (inputSalario <= 5189.82 && inputSalario > 2594.92) {
+                aliquotaINSS = 0.11 * inputSalario;
+                aliquotaINSS = aliquotaINSS.toFixed(2);
+            } else {
+                aliquotaINSS = 570.88;
+                aliquotaINSS = aliquotaINSS.toFixed(2);
+            }
+
+            if (inputSalario <= 1903.98) {
+                aliquotaIR = 0 * inputSalario;
+            } else if (inputSalario <= 2826.65 && inputSalario > 1903.98) {
+                aliquotaIR = (0.075 * inputSalario) - 142.8;
+                aliquotaIR = aliquotaIR.toFixed(2);
+            } else if (inputSalario <= 3751.05 && inputSalario > 2826.65) {
+                aliquotaIR = (0.15 * inputSalario) - 354.8;
+                aliquotaIR = aliquotaIR.toFixed(2);
+            } else if (inputSalario <= 4664.68 && inputSalario > 3751.05) {
+                aliquotaIR = (0.225 * inputSalario) - 636.13;
+                aliquotaIR = aliquotaIR.toFixed(2);
+            } else {
+                aliquotaIR = (0.275 * inputSalario) - 869.36;
+                aliquotaIR = aliquotaIR.toFixed(2);
+            }
+            verificaSalario = inputSalario - aliquotaINSS - aliquotaIR;
+            verificaSalario = verificaSalario.toFixed(2);
+            console.log('O valor líquido do salário é de: ' + verificaSalario + '\nO valor do INSS é de: ' + aliquotaINSS + '\nO valor do IR é de: ' + aliquotaIR);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
