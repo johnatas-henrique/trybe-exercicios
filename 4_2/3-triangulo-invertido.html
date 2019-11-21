@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let inputNumero = prompt('Digite o tamanho do lado do triângulo: ');
+        let caractere = "";
+        let espaco = ' ';
+
+        for (let i = 1; i < inputNumero - 1; i++) {
+            espaco += ' ';
+        }
+        for (let i = 1; i <= inputNumero; i++) {
+            caractere += '*';
+            console.log(espaco + caractere);
+            espaco = espaco.substring(1);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
