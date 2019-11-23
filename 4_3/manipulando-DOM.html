@@ -59,6 +59,10 @@
         exQuatroCorrigirTexto = document.getElementsByTagName('h1');
         exQuatroCorrigirTexto[0].innerHTML = 'Exercício 4.3 - JavaScript';
         /* 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo. */
+        exCincoMaiusculoP = document.getElementsByTagName('p');
+        for (i = 0; i < exCincoMaiusculoP.length; i++) {
+            exCincoMaiusculoP[i].innerHTML = exCincoMaiusculoP[i].innerHTML.toUpperCase();
+        }
         /* 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console. */
     </script>
 </body>
