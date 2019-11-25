@@ -8,15 +8,19 @@
     <title>Document</title>
     <script>
         let inputNumero = prompt('Digite o tamanho do quadrado: ');
-        document.write('Quadrado com ' + inputNumero + ' asteriscos de lado.' + "<br><br>");
-        let mostrarAsteriscos = '*';
+        if (inputNumero > 1) {
+            console.log('Quadrado com ' + inputNumero + ' asteriscos de lado.');
+            let mostrarAsteriscos = '*';
 
-        for (i = 1; i < inputNumero; i++) {
-            mostrarAsteriscos = mostrarAsteriscos + '*';
+            for (i = 1; i < inputNumero; i++) {
+                mostrarAsteriscos = mostrarAsteriscos + '*';
 
-        }
-        for (i = 0; i < inputNumero; i++) {
-            document.write(mostrarAsteriscos + "<br>");
+            }
+            for (i = 0; i < inputNumero; i++) {
+                console.log('Linha ' + (i + 1) + ' ' + mostrarAsteriscos);
+            }
+        } else {
+            console.log('O número digitado é menor ou igual a 1.')
         }
     </script>
 </head>
