@@ -11,10 +11,13 @@
         document.write('Triângulo com ' + inputNumero + ' asteriscos de lado.' + "<br><br>");
         let mostrarAsteriscos = '';
 
-        for (i = 0; i < inputNumero; i++) {
-            mostrarAsteriscos = mostrarAsteriscos + '*';
-            console.log(mostrarAsteriscos);
-            document.write(mostrarAsteriscos + '<br>');
+        if (inputNumero > 1) {
+            for (i = 0; i < inputNumero; i++) {
+                mostrarAsteriscos = mostrarAsteriscos + '*';
+                console.log('Linha ' + (i + 1) + ' ' + mostrarAsteriscos);
+            }
+        } else {
+            console.log('O número digitado é menor ou igual a 1.')
         }
     </script>
 </head>
