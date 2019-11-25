@@ -7,19 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-        let inputNumero = prompt('Digite o número de linhas da pirâmide: ');
-        let caractere = '*';
-        let espaco = ' ';
+        let inputNumero = prompt('Digite o número de asteriscos de base(trabalhamos melhor com números ímpares): ');
+        let espaco = '';
 
-        for (let i = 0; i < inputNumero - 1; i++) {
-            espaco += ' ';
-        }
-        console.log(espaco + caractere + espaco);
-        espaco = espaco.substring(1);
-        for (let i = 1; i <= inputNumero; i++) {
-            caractere += '**';
-            console.log(espaco + caractere + espaco);
-            espaco = espaco.substring(1);
+        if (inputNumero > 1 && inputNumero % 2 == 1) {
+            let caractere = '*';
+            inputNumero = Math.ceil(inputNumero / 2);
+            for (let i = 0; i < inputNumero - 1; i++) {
+                espaco += ' ';
+            }
+            for (let i = 1; i <= inputNumero; i++) {
+                console.log(espaco + caractere + espaco);
+                caractere += '**';
+                espaco = espaco.substring(1);
+            }
+        } else if (inputNumero > 2 && inputNumero % 2 == 0) {
+            let caractere = '**';
+            inputNumero = Math.ceil(inputNumero / 2);
+            for (let i = 0; i < inputNumero - 1; i++) {
+                espaco += ' ';
+            }
+            for (let i = 1; i <= inputNumero; i++) {
+                console.log(espaco + caractere + espaco);
+                caractere += '**';
+                espaco = espaco.substring(1);
+            }
+        } else {
+            console.log('O número digitado é menor ou igual a 2.');
         }
     </script>
 </head>
