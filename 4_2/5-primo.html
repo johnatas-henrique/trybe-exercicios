@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function verificaPrimo(num) {
+            if (num == 0 || num == 1) {
+                console.log('Apesar de não ter divisores, ' + num + ' não é primo');
+                return false;
+            }
+            if (num == 2 || num == 3) {
+                console.log('O número ' + num + ' não é divisível, portanto é primo');
+                return true;
+            }
+            if (num % 2 == 0) {
+                console.log('O número ' + num + ' é divisível por 2, portanto não é primo');
+                return false;
+            }
+            if (num % 5 == 0) {
+                console.log('O número ' + num + ' é divisível por 5, portanto não é primo');
+                return false;
+            }
+            for (let i = 3; i < num / 2; i += 2) {
+                if (num % i == 0) {
+                    console.log('O número ' + num + ' é divisível por ' + i + ', portanto não é primo');
+                    return false;
+                }
+                console.log('O número ' + num + ' não é divisível, portanto é primo');
+                return true;
+            }
+        }
+        console.log(verificaPrimo(0));
+        console.log(verificaPrimo(1));
+        console.log(verificaPrimo(2));
+        console.log(verificaPrimo(3));
+        console.log(verificaPrimo(5));
+        console.log(verificaPrimo(8));
+        console.log(verificaPrimo(13));
+        console.log(verificaPrimo(21));
+        console.log(verificaPrimo(34));
+        console.log(verificaPrimo(55));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
