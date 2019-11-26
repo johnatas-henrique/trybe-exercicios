@@ -75,6 +75,16 @@
         divCenterContent = document.createElement('div');
         divCenterContent.className = 'center-content';
         divMainContent.appendChild(divCenterContent);
+
+        /* 4. Adicione a tag p como filho do div criado no passo 3 e coloque algum texto; */
+        pColocarTexto = document.createElement('p');
+        pColocarTexto.innerText = 'Texto pedido na parte 4';
+        divCenterContent.appendChild(pColocarTexto);
+
+        /* 5. Adicione a tag div com a classe left-content como filho da tag div criada no passo 2; */
+        divLeftContent = document.createElement('div');
+        divLeftContent.className = 'left-content';
+        divMainContent.appendChild(divLeftContent);
     </script>
 </body>
 
