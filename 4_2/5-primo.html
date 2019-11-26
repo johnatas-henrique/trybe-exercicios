@@ -11,38 +11,27 @@
             if (num == 0 || num == 1) {
                 console.log('Apesar de não ter divisores, ' + num + ' não é primo');
                 return false;
-            }
-            if (num == 2 || num == 3) {
+
+            } else if (num == 2 || num == 3 || num == 5) {
                 console.log('O número ' + num + ' não é divisível, portanto é primo');
                 return true;
+
             }
-            if (num % 2 == 0) {
-                console.log('O número ' + num + ' é divisível por 2, portanto não é primo');
-                return false;
-            }
-            if (num % 5 == 0) {
-                console.log('O número ' + num + ' é divisível por 5, portanto não é primo');
-                return false;
-            }
-            for (let i = 3; i < num / 2; i += 2) {
+            for (let i = 3; i < num / 2; i++) {
                 if (num % i == 0) {
                     console.log('O número ' + num + ' é divisível por ' + i + ', portanto não é primo');
                     return false;
                 }
-                console.log('O número ' + num + ' não é divisível, portanto é primo');
-                return true;
+
             }
+            console.log('O número ' + num + ' não é divisível, portanto é primo');
+            return true;
         }
-        console.log(verificaPrimo(0));
-        console.log(verificaPrimo(1));
         console.log(verificaPrimo(2));
         console.log(verificaPrimo(3));
         console.log(verificaPrimo(5));
-        console.log(verificaPrimo(8));
-        console.log(verificaPrimo(13));
-        console.log(verificaPrimo(21));
-        console.log(verificaPrimo(34));
-        console.log(verificaPrimo(55));
+        console.log(verificaPrimo(77));
+        console.log(verificaPrimo(81));
     </script>
 </head>
 
