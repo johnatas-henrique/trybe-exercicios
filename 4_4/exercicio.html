@@ -146,11 +146,19 @@
         /* 9. Adicione 3 tags h3, todas sendo filhas do div criado no passo 2; */
 
         Primeirah3FilhasdivMain = document.createElement('h3');
+        Primeirah3FilhasdivMain.innerText = 'Texto da h3 - 01'
         Segundah3FilhasdivMain = document.createElement('h3');
+        Segundah3FilhasdivMain.innerText = 'Texto da h3 - 02'
         Terceirah3FilhasdivMain = document.createElement('h3');
+        Terceirah3FilhasdivMain.innerText = 'Texto da h3 - 03';
         divMainContent.appendChild(Primeirah3FilhasdivMain);
         divMainContent.appendChild(Segundah3FilhasdivMain);
         divMainContent.appendChild(Terceirah3FilhasdivMain);
+
+        /* Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
+
+        1. Adicione a classe title na tag h1 criada; */
+        h1Titulo.className = 'title';
     </script>
 </body>
 
