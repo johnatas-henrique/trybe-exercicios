@@ -17,8 +17,9 @@ caixaCargo = document.querySelector('#cargo');
 caixaDescricaoCargo = document.querySelector('#descricaocargo');
 caixaDataInicio = document.querySelector('#datainicio');
 
+retCaixaEstado = document.createElement('p');
 
-arrCaixas = [caixaNome, caixaEmail, caixaCPF, caixaEndereco, caixaCidade, nomeEstado, caixaBiografia, caixaCargo, caixaDescricaoCargo, caixaDataInicio];
+arrCaixas = [caixaNome, caixaEmail, caixaCPF, caixaEndereco, caixaCidade, retCaixaEstado, caixaBiografia, caixaCargo, caixaDescricaoCargo, caixaDataInicio];
 
 divResultado = document.querySelector('.resultado');
 
@@ -37,7 +38,6 @@ botaoEnviar.addEventListener('click', function (event) {
 
 function validarCampos(item, index) {
     if (item.value !== '') {
-        nomeEstado = arrEstado[comboEstado.value];
         criarPNome = document.createElement('p');
         criarSpanValor = document.createElement('span');
         nomeCaixas = document.createTextNode(item.name);
@@ -75,6 +75,7 @@ function validaCPF() {
     }
 }
 
-function nomeEstado(){
-
-}
+caixaComboEstado.addEventListener('click', function(){
+    retCaixaEstado.name = caixaComboEstado.name;
+    retCaixaEstado.value = arrEstado[caixaComboEstado.value];
+})
