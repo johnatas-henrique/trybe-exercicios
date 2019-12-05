@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Cadastre seu currículo</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário de cadastro</h1>
+    </header>
+
+    <form>
+        <fieldset>
+            <legend>Dados do Candidato</legend>
+
+            <div>
+                <label for="nome">
+                    <p>Nome:<span class="texto-vermelho"> *</span></p>
+                </label>
+                <input id="nome" type="text" name="nome" maxlength="40" required="required"
+                    placeholder="Seu Nome">
+            </div>
+
+            <div>
+                <label for="email">
+                    <p>E-Mail:<span class="texto-vermelho"> *</span></p>
+                </label>
+                <input id="email" type="text" name="email" maxlength="50" required="required"
+                    placeholder="Seu e-mail">
+            </div>
+
+            <div>
+                <label for="cpf">
+                    <p>CPF:<span class="texto-vermelho"> *</span></p>
+                </label>
+                <input id="cpf" type="text" name="cpf" maxlength="11" required="required" placeholder="Seu CPF">
+            </div>
+
+            <div>
+                <label for="endereco">
+                    <p>Endereço:<span class="texto-vermelho"> *</span></p>
+                </label>
+                <input id="endereco" type="text" name="endereco" maxlength="200" required="required"
+                    placeholder="Seu endereço">
+            </div>
+
+            <div>
+                <label for="cidade">
+                    <p>Cidade:<span class="texto-vermelho"> *</span></p>
+                </label>
+                <input id="cidade" type="text" name="cidade" maxlength="28" required="required"
+                    placeholder="Sua cidade">
+            </div>
+
+            <div>
+                <label for="">
+                    <p>Estado:<span class="texto-vermelho"> *</span></p>
+                </label>
+                <select id="combo-estado" name="estado" required="required">
+                    <option selected="selected" value="">Selecione o estado</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Tipo da casa:<span class="texto-vermelho"> *</span></p>
+                <label for="tipo1"><input type="radio" id="tipo1" name="tipo" required="required"
+                        value="apartamento">Apartamento</label>
+                <label for="tipo2"><input type="radio" id="tipo2" name="tipo" required="required"
+                        value="casa">Casa</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados do Último Emprego</legend>
+
+            <div>
+                <label for="">
+                    <p>Resumo do currículo:<span class="texto-vermelho"> *</span></p>
+                </label>
+                <textarea name="resumo" id="biografia" cols="70" rows="15" maxlength="1000" required="required"
+                    placeholder="Sua biografia"></textarea>
+            </div>
+
+            <div>
+                <label for="cargo">
+                    <p>Cargo:<span class="texto-vermelho"> *</span></p>
+                </label>
+                <input id="cargo" type="text" name="cargo" maxlength="40" required="required"
+                    placeholder="Seu cargo">
+            </div>
+
+            <div>
+                <label for="descricaocargo">
+                    <p>Descrição do Cargo:<span class="texto-vermelho"> *</span></p>
+                </label>
+                <input id="descricaocargo" type="text" name="descricaocargo" maxlength="500" required="required"
+                    placeholder="Uma descrição para o seu cargo">
+            </div>
+
+            <div>
+                <label for="datainicio">
+                    <p>Data de início:<span class="texto-vermelho"> *</span></p>
+                </label>
+                <input id="datainicio" placeholder="Data de início" type="text" name="datainicio" maxlength="10" required="required">
+            </div>
+        </fieldset>
+
+        <div>
+            <button type="submit" id="botao-enviar" name="criardiv" value="1">Criar div</button>
+            <button type="reset" id="botao-reset">Apagar tudo</button>
+        </div>
+
+        <div class="resultado"></div>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

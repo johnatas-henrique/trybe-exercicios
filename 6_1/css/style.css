@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.texto-vermelho {
+    color: red;
+}
+
+.titulo-info{
+    font-size: 1.2em;
+    font-weight: 700;
+}
