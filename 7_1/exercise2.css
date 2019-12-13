@@ -1,0 +1,47 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+  }
+
+  .container {
+      margin: 0 10px;
+  }
+  header p { 
+      text-align: center;
+      font-size: 1.4em;
+      font-weight: 700;
+      margin: 20px 0;
+  }
+
+  header ul {
+    text-align: center;
+  }
+  header ul li {
+    display: inline-block;
+    text-decoration: underline;
+    margin: 0 10px;
+  }
+  h2 {
+      margin: 20px;
+      text-align: center;
+  }
+
+  h1 {
+      text-align: center;
+  }
+  
+  article.main-content p {
+      text-align: justify;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+  }
