@@ -70,66 +70,87 @@
             width: 50px;
             height: 50px;
         }
+
         #exercise-1 {
             animation: ex1-5 3s 1s;
         }
+
         #exercise-2 {
             animation: ex1-5 2s 2s;
             animation-fill-mode: forwards;
         }
+
         #exercise-3 {
             animation: ex1-5 1s 1s;
             animation-iteration-count: 2;
             animation-direction: alternate;
         }
-        
+
         #exercise-4:hover {
             animation: ex1-5 5s;
         }
 
-        section:hover > #exercise-5 {
+        section:hover>#exercise-5 {
             animation: ex1-5 5s;
         }
 
-        .disp {
-            display: inline;
-        }
-        #exercise-6-square:hover + #exercise-6 {
-            animation: ex6 5s; 
+        #exercise-6-square:hover+#exercise-6 {
+            animation: ex6 5s;
         }
 
         #exercise-7 {
             animation: ex7 10s infinite linear;
         }
 
+        #exercise-8 {
+            animation: ex8 4s linear forwards;
+            
+        }
+
         @keyframes ex1-5 {
             0% {
                 margin-left: 0%;
             }
+
             100% {
                 margin-left: 95%;
             }
         }
+
         @keyframes ex6 {
             0% {
                 margin-right: 0%;
             }
+
             100% {
                 margin-right: 90%;
             }
         }
-        @keyframes ex7{
+
+        @keyframes ex7 {
             0% {
                 width: 50px;
             }
+
             50% {
                 width: 100%;
             }
+
             100% {
                 width: 50px;
             }
         }
+
+        @keyframes ex8 {
+            0% {
+                background-color: red;
+            }
+
+            100% {
+                background-color: yellow;
+            }
         }
+        
     </style>
 </head>
 
@@ -162,8 +183,8 @@
         </li>
         <li>
             <section class="justify-content__space-between">
-                <div id="exercise-6-square" class="blue medium disp"></div>
-                <div id="exercise-6" class="ball green medium disp"></div>
+                <div id="exercise-6-square" class="blue medium"></div>
+                <div id="exercise-6" class="ball green medium"></div>
             </section>
         </li>
         <li>
