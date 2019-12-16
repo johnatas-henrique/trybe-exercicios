@@ -71,22 +71,26 @@
             height: 50px;
         }
         #exercise-1 {
-            animation: ex1-4 3s 1s;
+            animation: ex1-5 3s 1s;
         }
         #exercise-2 {
-            animation: ex1-4 2s 2s;
+            animation: ex1-5 2s 2s;
             animation-fill-mode: forwards;
         }
         #exercise-3 {
-            animation: ex1-4 1s 1s;
+            animation: ex1-5 1s 1s;
             animation-iteration-count: 2;
             animation-direction: alternate;
         }
         
         #exercise-4:hover {
-            animation: ex1-4 5s;
+            animation: ex1-5 5s;
         }
-        @keyframes ex1-4 {
+
+        section:hover > #exercise-5 {
+            animation: ex1-5 5s;
+        }
+        @keyframes ex1-5 {
             0% {
                 margin-left: 0%;
             }
