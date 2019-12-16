@@ -90,6 +90,15 @@
         section:hover > #exercise-5 {
             animation: ex1-5 5s;
         }
+
+        .disp {
+            display: inline;
+        }
+        #exercise-6-square:hover + #exercise-6 {
+            animation: ex6 5s;
+            
+        }
+
         @keyframes ex1-5 {
             0% {
                 margin-left: 0%;
@@ -97,6 +106,15 @@
             100% {
                 margin-left: 95%;
             }
+        }
+        @keyframes ex6 {
+            0% {
+                margin-right: 0%;
+            }
+            100% {
+                margin-right: 90%;
+            }
+        }
         }
     </style>
 </head>
@@ -130,8 +148,8 @@
         </li>
         <li>
             <section class="justify-content__space-between">
-                <div id="exercise-6-square" class="blue medium"></div>
-                <div id="exercise-6" class="ball green medium"></div>
+                <div id="exercise-6-square" class="blue medium disp"></div>
+                <div id="exercise-6" class="ball green medium disp"></div>
             </section>
         </li>
         <li>
