@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios 7.3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 90%;
+            height: 100px;
+            border: 1px solid red;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .flex-direction__column {
+            flex-direction: column;
+        }
+
+        .justify-content__space-between {
+            justify-content: space-between;
+        }
+
+        .justify-content__center {
+            justify-content: center;
+        }
+
+        .align-items__flex-start {
+            align-items: flex-start;
+        }
+
+        .automatic-box-height {
+            height: auto;
+        }
+
+        .ball {
+            border-radius: 100%;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .medium {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>
+            <section>
+                <div id="exercise-1" class="ball green medium"></div>
+            </section>
+        </li>
+        <li>
+            <section>
+                <div id="exercise-2" class="ball green medium"></div>
+            </section>
+        </li>
+        <li>
+            <section>
+                <div id="exercise-3" class="ball green medium"></div>
+            </section>
+        </li>
+        <li>
+            <section>
+                <div id="exercise-4" class="ball green medium"></div>
+            </section>
+        </li>
+        <li>
+            <section id="section-5">
+                <div id="exercise-5" class="ball green medium"></div>
+            </section>
+        </li>
+        <li>
+            <section class="justify-content__space-between">
+                <div id="exercise-6-square" class="blue medium"></div>
+                <div id="exercise-6" class="ball green medium"></div>
+            </section>
+        </li>
+        <li>
+            <section class="justify-content__center">
+                <div id="exercise-7" class="blue medium"></div>
+            </section>
+        </li>
+        <li>
+            <section class="justify-content__center">
+                <div id="exercise-8" class="red medium"></div>
+            </section>
+        </li>
+        <li>
+            <section class="justify-content__center">
+                <div id="exercise-9" class="red medium"></div>
+            </section>
+        </li>
+        <li>
+            <section class="justify-content__center">
+                <div id="exercise-10" class="red medium"></div>
+            </section>
+        </li>
+        <li>
+            <section class="flex-direction__column align-items__flex-start automatic-box-height">
+                <div id="exercise-11_1" class="red medium"></div>
+                <div id="exercise-11_2" class="blue medium"></div>
+                <div id="exercise-11_3" class="green medium"></div>
+                <div id="exercise-11_4" class="yellow medium"></div>
+                <div id="exercise-11_5" class="black medium"></div>
+            </section>
+        </li>
+        <li>
+            <section class="justify-content__center">
+                <div id="exercise-12" class="black medium"></div>
+            </section>
+        </li>
+    </ol>
+</body>
+
+</html>
