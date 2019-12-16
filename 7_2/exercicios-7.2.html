@@ -103,8 +103,11 @@
         }
 
         #exercise-8 {
-            animation: ex8 4s linear forwards;
-            
+            animation: ex8 4s linear forwards;  
+        }
+
+        #exercise-9 {
+            animation: ex9 4s infinite linear alternate;
         }
 
         @keyframes ex1-5 {
@@ -148,6 +151,24 @@
 
             100% {
                 background-color: yellow;
+            }
+        }
+
+        @keyframes ex9 {
+            0% {
+                background-color: red;
+            }
+
+            33% {
+                background-color: yellow;
+            }
+
+            66% {
+                background-color: blue;
+            }
+            
+            100% {
+                background-color: green;
             }
         }
         
