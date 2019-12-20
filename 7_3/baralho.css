@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+#deck {
+    width: 150px;
+    margin: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+.grid-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.hand {
+    margin: 5px;
+}
+
+.borders {
+    outline: 10px solid red;
+}
