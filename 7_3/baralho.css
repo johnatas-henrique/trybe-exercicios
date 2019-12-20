@@ -16,9 +16,49 @@ img {
     grid-template-columns: repeat(7, 1fr);
 }
 .hand {
-    margin: 5px;
+    margin: 30px;
 }
 
-.borders {
-    outline: 10px solid red;
+.girar:hover {
+    animation: girar 1s linear infinite;
+}
+
+.aumentar:hover {
+    animation: aumentar 1s linear infinite alternate;
+}
+
+.virar:hover {
+    animation: virar 1s linear infinite alternate;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(2,2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+@keyframes virar {
+    0% {
+        transform: rotate3d(0,0,0,0deg);
+    }
+    50% {
+        transform: rotate3d(6,4,4,180deg);  
+    }
+    100% {
+        transform: rotate3d(0,0,0,0deg);
+    }
 }
