@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function wordEnd(palavra, final) {
+            tamFinal = (final.length) * -1;
+            palavraCorte = palavra.slice(tamFinal);
+            if (final == palavraCorte) {
+                console.log('O ending digitado é igual a palavra digitada, no caso: ' + final);
+                return true
+            } else {
+                console.log('O ending digitado é diferente da palavra digitada, foi digitado: ' + final + ' e a palavra é: ' + palavra);
+                return false
+            }
+        }
+
+        wordEnd('trybe', 'be')
+    </script>
+</body>
+
+</html>
