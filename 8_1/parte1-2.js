@@ -8,5 +8,6 @@ function editInPlace() {
   // s = [2, 5, 7]; <- this is invalid
 
   // change code above this line
+  console.log(`array s = [${s}]`);
 }
 editInPlace();
