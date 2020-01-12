@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pikaday.css">
+    <link rel="stylesheet" type="text/css" href="css/validation.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Aula 06.2 - Cadastre seu currículo</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário de cadastro</h1>
+    </header>
+
+    <form id="formulario" class="mx-3">
+        <fieldset class="form-group">
+            <legend class="col-form-label">Dados do Candidato</legend>
+
+           
+                <div class="form-group">
+                    <label for="nome">Nome:<span class="texto-vermelho"> *</span></label>
+                    <input data-validate="required" class="validate form-control" id="nome" type="text" name="Nome" maxlength="40" required="required" placeholder="Seu Nome">
+                </div>
+            
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">E-Mail:<span class="texto-vermelho"> *</span></label>
+                    <input data-validate="required,email" class="validate form-control" id="email" type="text" name="E-mail" maxlength="50" required="required" placeholder="Seu e-mail">
+                </div>
+            
+
+            <div class="form-group col-md-6">
+                <label for="cpf">CPF:<span class="texto-vermelho"> *</span></label>
+                <input data-validate="required" class="validate form-control" id="cpf" type="text" name="CPF" maxlength="11" required="required" placeholder="Seu CPF">
+            </div>
+        </div>
+
+            <div class="form-group">
+                <label for="endereco">Endereço:<span class="texto-vermelho"> *</span></label>
+                <input data-validate="required" class="validate form-control" id="endereco" type="text" name="Endereço" maxlength="200" required="required"
+                    placeholder="Seu endereço">
+            </div>
+
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="cidade">Cidade:<span class="texto-vermelho"> *</span></label>
+                <input data-validate="required" class="validate form-control" id="cidade" type="text" name="Cidade" maxlength="28" required="required"
+                    placeholder="Sua cidade">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="">Estado:<span class="texto-vermelho"> *</span></label>
+                <select class="custom-select" id="combo-estado" name="Estado" required="required">
+                    <option selected="selected" value="0">Selecione o estado</option>
+                </select>
+            </div>
+        </div>
+
+            <div class="form-group">
+                <p>Tipo da casa:<span class="texto-vermelho"> *</span></p>
+                <input type="radio" id="tipo1" name="Moradia" required="required" value="Apartamento">
+                <label class="form-check-label" for="tipo1">Apartamento</label><br>
+                <input type="radio" id="tipo2" name="Moradia" required="required" value="Casa">
+                <label class="form-check-label" for="tipo2">Casa</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+                <legend class="col-form-label">Dados do Último Emprego</legend>
+
+            <div class="form-group">
+                <label for="">Resumo do currículo:<span class="texto-vermelho"> *</span></label>
+                <textarea data-validate="required" class="validate form-control" name="Biografia" id="biografia" cols="70" rows="15" maxlength="1000" required="required"
+                    placeholder="Sua biografia"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="cargo">Cargo:<span class="texto-vermelho"> *</span></label>
+                <input data-validate="required" class="validate form-control" id="cargo" type="text" name="Cargo" maxlength="40" required="required" placeholder="Seu cargo">
+            </div>
+
+            <div class="form-group">
+                <label for="descricaocargo">Descrição do Cargo:<span class="texto-vermelho"> *</span></label>
+                <input data-validate="required" class="validate form-control" id="descricaocargo" type="text" name="Descrição do Cargo" maxlength="500" required="required"
+                    placeholder="Uma descrição para o seu cargo">
+            </div>
+
+            <div class="form-group">
+                <label for="datainicio">Data de início:<span class="texto-vermelho"> *</span></label>
+                <input data-validate="required" class="validate form-control" id="datainicio" placeholder="Data de início" type="text" name="Data Início" maxlength="10"
+                    required="required">
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <button class="btn btn-outline-success" type="submit" id="botao-enviar" name="criardiv" value="1">Criar div</button>
+            <button class="btn btn-outline-warning" type="reset" id="botao-reset">Apagar tudo</button>
+        </div>
+
+        <div class="resultado"></div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/pikaday.js"></script>
+    <script>
+        var picker = new Pikaday({
+            field: document.getElementById('datainicio'),
+            firstDay: 1,
+            minDate: new Date(2017, 12, 1),
+            maxDate: new Date(2020, 12, 31),
+            yearRange: [2000, 2020],
+            format: 'DD/MM/YYYY'
+        });
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/validation.min.js"></script>
+    <script>
+        validation.init("formulario");
+        validation.highlight();
+    </script>
+    
+</body>
+
+</html>
