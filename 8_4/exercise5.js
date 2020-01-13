@@ -4,9 +4,7 @@ const assert = require('assert')
 class Dog {
     constructor(name) {
         this.name = name;
-        this.bark = function () {
-            return `${this.name} is barking`;
-        };
+        this.bark = () => `${this.name} is barking`;
     }
 }
 
