@@ -13,7 +13,7 @@
         <h1>Ferramentas para melhoria da leitura</h1>
         <div>
             <label for="bg-cor">Escolher cor de background</label>
-            <input id="bg-cor" type="color" name="bg-color">
+            <input id="bg-cor" type="color" value="#ffffff" name="bg-color">
         </div>
         <div>
             <label for="texto-cor">Escolher cor do texto</label>
@@ -29,12 +29,25 @@
         </div>
         <div>
             <label for="fonte-familia">Tipos de fonte</label>
-            <select id="fonte-familia" name="families">
+            <select id="fonte-familia" name="font-families">
                 <option value="serif">Serif</option>
                 <option value="sans-serif">Sans-Serif</option>
                 <option value="cursive">Cursive</option>
                 <option value="monospace">Monospace</option>
             </select>
+        </div>
+        <div>
+            <label for="borda-tamano">Tamanho da borda em px (entre 0 e 20)</label>
+            <input id="borda-tamanho" type="number" name="border-size" value="0" min="0" max="20">
+            <label for="borda-familia">Tipo</label>
+            <select id="borda-familia" name="border-families">
+                <option value="solid">Sólida</option>
+                <option value="dotted">Pontilhada</option>
+                <option value="double">Dupla</option>
+                <option value="ridge">Relevo</option>
+            </select>
+            <label for="borda-cor">Escolher cor da borda</label>
+            <input id="borda-cor" type="color" name="border-color">
         </div>
         <button id="salvar">Salvar configurações</button>
     </div>
