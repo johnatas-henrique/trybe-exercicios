@@ -1,23 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+const arrayReact1 = ['Felipe', 'Fernando', 'Johnatas'];
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <ul>
+        {arrayReact1.map((item, index) => (
+          <li key={index}>Passei o item da posição {index}, com valor de {item}</li>
+        ))}
+        </ul>
       </header>
     </div>
   );
