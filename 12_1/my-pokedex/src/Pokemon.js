@@ -10,7 +10,7 @@ class Pokemon extends React.Component {
                 <h2>#{id} - {name}</h2>
                 <p>{type}</p>
                 <p>Peso médio: {weight}{unit}</p>
-                <p><a href={info} target='_blank'>Mais info</a></p>
+                <p><a href={info}>Mais info</a></p>
             </div>
             <div className='w-40'>
                 <img src={image} alt={name}></img>
