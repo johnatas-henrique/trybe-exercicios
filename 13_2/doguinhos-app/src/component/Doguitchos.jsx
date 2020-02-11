@@ -24,13 +24,15 @@ class Doguitchos extends React.Component {
 
   guardaDoguinho (fetchRes) {
     const { doguinhoName, doguinhoArray } = this.state;
-    let tempArr = [[doguinhoName, fetchRes],];
-    /* console.log(tempArr); */
-    let objeto = Object.fromEntries(tempArr);
-    /* console.log(objeto); */
+    /* let tempArr = [[doguinhoName, fetchRes],]; */
+    /* console.log('array tempArr',tempArr); */
+/*     let objeto = Object.fromEntries(tempArr); */
+    const objeto = {};
+    objeto[doguinhoName] = fetchRes;
+    /* console.log('fromEntries', objeto); */
     doguinhoArray.push(objeto);
     this.setState(() => ({doguinhoName: ''}))
-    /* console.log(this.state.doguinhoArray); */
+    console.log(this.state.doguinhoArray);
   }
 
   render () {
