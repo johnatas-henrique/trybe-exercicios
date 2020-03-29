@@ -18,7 +18,9 @@ assert.strictEqual(typeof myRemoveWithoutCopy, 'function');
 assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4]);
 assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4]);
 assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
-const vect = [1, 2, 3, 4];
-const actual = myRemoveWithoutCopy(vect, 3);
 
-assert.deepEqual(vect, [1, 2, 3, 4]);
+const arrQuatro = [1, 2, 3, 4];
+const expected = [1, 2, 3, 4];
+assert.notDeepEqual(myRemoveWithoutCopy(arrQuatro, 3), expected);
+
+assert.deepEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);

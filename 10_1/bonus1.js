@@ -7,43 +7,20 @@ function getChange(payable, paid) {
     let remaining = paid - payable;
   
     // escreva seu código aqui...
-    if (remaining < 0) throw new Error('paid value is not enough');
-    
-    while(remaining >= 200){
-        remaining -= 200;
-        change.push(200);
+    if (paid < payable) throw new Error('paid value is not enough');
+ 
+    for (let i = 0; i < coins.length; i += 1) {
+        const coinsQueCabem = Math.floor(remaining / coins[i]);
+        
+        if (coinsQueCabem > 0) {
+            for (let idx = 1; idx <= coinsQueCabem; idx += 1) {
+                change.push(coins[i]);
+                remaining -= coins[i];
+            }
+        }
     }
-    while(remaining >= 100){
-        remaining -= 100;
-        change.push(100);
-    }
-    while(remaining >= 50){
-        remaining -= 50;
-        change.push(50);
-    }
-    while(remaining >= 20){
-        remaining -= 20;
-        change.push(20);
-    }
-    while(remaining >= 10){
-        remaining -= 10;
-        change.push(10);
-    }
-    while(remaining >= 5){
-        remaining -= 5;
-        change.push(5);
-    }
-    while(remaining >= 2){
-        remaining -= 2;
-        change.push(2);
-    }
-    while(remaining >= 1){
-        remaining -= 1;
-        change.push(1);
-    }
-
     return change;
-  }
+}
 
   let result = getChange(1, 1); // no change/coins just an empty array
 let expected = [];
