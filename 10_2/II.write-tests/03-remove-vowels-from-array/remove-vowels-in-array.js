@@ -1,16 +1,18 @@
-var removeVowels = require("../02-remove-vowels/remove-vowels");
+const assert = require('assert');
 
-function removeVowelsForWords(words) {
-  var result = words.map(function(word) {
-    return removeVowels(word);
-  });
+const greaterThanTenNew = (array) => {
+  const results = [];
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] > 10) {
+      results.push(array[i]);
+    }
+  }
+  return results;
+};
 
-  return result;
-}
+const parameter = [4, 10, 32, 9, 21];
+const result = [32, 21];
 
-module.exports = removeVowelsForWords;
-
-/*
-    input: ["Irina", "Etza", "Daniel"]
-    expected output: ["rn", "tz", "Dnl"]
-*/
+assert.strictEqual(typeof greaterThanTenNew, 'function');
+const output = greaterThanTenNew(parameter);
+assert.deepEqual(output, result);

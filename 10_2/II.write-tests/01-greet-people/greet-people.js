@@ -1,18 +1,16 @@
-function greetPeople(people) {
-  var greeting = "Hello ";
-
-  people.forEach(function(person) {
-    greeting = greeting + person;
-  });
-
+const greetPeopleNew = (people) => {
+  const greeting = [];
+  for (const person in people) {
+    greeting.push(`Hello ${people[person]}`);
+  }
   return greeting;
-}
+};
 
-module.exports = greetPeople;
+const assert = require('assert');
+assert.strictEqual(typeof greetPeopleNew, 'function');
 
-/*
-  Let's trace this piece of code - what is the value of result with this input
+const parameter = ['Irina', 'Ashleigh', 'Elsa'];
+const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
 
-  var mentors = ['Irina', 'Ashleigh', 'Etza'];
-  var result = greetPeople(mentors)
-*/
+const output = greetPeopleNew(parameter);
+assert.deepEqual(output, result);

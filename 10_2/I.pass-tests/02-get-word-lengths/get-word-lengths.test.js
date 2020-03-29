@@ -1,9 +1,10 @@
-var wordLengths = require("./get-word-lengths");
+const wordLengths = require("./get-word-lengths");
 
-test("Get word lengths", function() {
-  var words = ["sun", "potato", "roundabout", "pizza"];
-  var expected = [3, 6, 10, 5];
+const assert = require('assert');
 
-  var output = wordLengths(words);
-  expect(output).toEqual(expected);
-});
+const words = ['sun', 'potato', 'roundabout', 'pizza'];
+const expected = [3, 6, 10, 5];
+
+assert.strictEqual(typeof wordLengths, 'function');
+const output = wordLengths(words);
+assert.deepEqual(output, expected);

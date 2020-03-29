@@ -1,11 +1,17 @@
-function getLargestNumber(array) {
-  var largestNumber;
-  for (var i = 0; i < array.length - 1; i++) {
-    if (array[i] > array[i + 1]) {
-      largestNumber = array[i];
-    }
-  }
-  return largestNumber;
+const assert = require('assert');
+
+const getLargestNumber = (array) => {
+    let largestNumber = array.slice().sort((a, b) => b - a);
+    console.log(parameter);
+    return largestNumber[0];
 }
 
-module.exports = getLargestNumber;
+const parameter = [45, 8, 2, 50, 99, 1, 7];
+const result = 99;
+
+const output = getLargestNumber(parameter);
+const unchangedArray = [45, 8, 2, 50, 99, 1, 7];
+
+assert.equal(output, result);
+assert.deepEqual(parameter, unchangedArray);
+

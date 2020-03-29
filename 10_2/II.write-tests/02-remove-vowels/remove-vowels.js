@@ -1,31 +1,30 @@
-function removeVowels(word) {
-  var characters = word.split("");
+const assert = require('assert');
 
-  var result = [];
+const removeVowelsNew = (word) => {
+  const characters = word.split('');
+  const results = [];
+  let counter = 0;
 
-  characters.forEach(function(character) {
+  for (let i = 0; i < characters.length; i += 1) {
     if (
-      character === "a" ||
-      character === "o" ||
-      character === "i" ||
-      character === "e" ||
-      character === "u"
+      characters[i] === 'a' ||
+      characters[i] === 'o' ||
+      characters[i] === 'i' ||
+      characters[i] === 'e' ||
+      characters[i] === 'u'
     ) {
-      result.push(character);
+      counter += 1;
+      results.push(counter);
     } else {
-      result.push("_");
+      results.push(characters[i]);
     }
-  });
+  }
+  return results.join('');
+};
 
-  return result.join("");
-}
+const parameter = 'Dayane';
+const result = 'D1y2n3';
 
-module.exports = removeVowels;
-
-/*
-  Let's trace this piece of code - what is the value of result with this input
-
-  var result = removeVowels('samuel');
-
-  what is the value of result?
-*/
+assert.strictEqual(typeof removeVowelsNew, 'function');
+const output = removeVowelsNew(parameter);
+assert.strictEqual(output, result);
