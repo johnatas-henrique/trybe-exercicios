@@ -1,8 +1,7 @@
 const JSX = (
-    <div>
+  <div>
+    <h1>This is a block of JSX</h1>
     {/* comment */}
-      <h1>This is a block of JSX</h1>
-      <p>Here's a subtitle</p>
-    </div>
-  );
-  
+    <p>Here's a subtitle</p>
+  </div>
+);
