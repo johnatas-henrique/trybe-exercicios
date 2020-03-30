@@ -1,23 +1,23 @@
 import React from 'react';
-import './App.css';
+import './pokemon.css';
 
 class Pokemon extends React.Component {
-    render () {
-        const {id, name, type, weight, unit, image, info} = this.props;
-        return (
-        <div className = 'poke-square'>
-            <div className='w-60'>
-                <h2>#{id} - {name}</h2>
-                <p>{type}</p>
-                <p>Peso médio: {weight}{unit}</p>
-                <p><a href={info}>Mais info</a></p>
-            </div>
-            <div className='w-40'>
-                <img src={image} alt={name}></img>
-            </div>
+  render() {
+    const {name, type, averageWeight, image} = this.props.pokemon;
+
+    return (
+      <div className="pokemon">
+        <div>
+          <p>{name}</p>
+          <p>{type}</p>
+          <p>
+            Average weight: {`${averageWeight.value} ${averageWeight.measurementUnit}`}
+          </p>
         </div>
-        );
-    }
+        <img src={image} alt={`${name} sprite`} />
+      </div>
+    );
+  }
 }
 
 export default Pokemon;

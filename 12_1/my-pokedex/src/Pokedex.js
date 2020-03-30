@@ -1,43 +1,72 @@
 import React from 'react';
 import Pokemon from './Pokemon';
-import pokemons from './data';
-import './App.css';
-
-class Button extends React.Component {
-    render() {
-        return (
-        <button onClick={this.props.evento} 
-        value={this.props.value}>{this.props.nome}</button>
-        );
-    }
-}
+import Button from './Button';
+import './pokedex.css';
 
 class Pokedex extends React.Component {
     constructor(props) {
         super(props);
-        this.state = ({btnvalue: 0, counter: 0});
+        this.state = { pokemonIndex: 0, filteredType: 'all' };
     }
 
-    clickme = event => {
-        this.setState({btnvalue: event.target.value, counter}, () => {
-            counter: counter + btnvalue
-        console.log(this.state)
-        })
+    filterPokemons(filteredType) {
+        this.setState({ filteredType, pokemonIndex: 0 });
     }
 
-    render () {
+    nextPokemon(numberOfPokemons) {
+        this.setState(state => ({
+            pokemonIndex: (state.pokemonIndex + 1) % numberOfPokemons,
+        }));
+    }
+
+    fetchFilteredPokemons() {
+        console.log(this.props.data);
+        const { pokemons } = this.props;
+        const { filteredType } = this.state;
+        console.log('l26', pokemons);
+        return pokemons.filter(pokemon => {
+            if (filteredType === 'all') return true;
+            return pokemon.type === filteredType;
+        });
+    }
+
+    fetchPokemonTypes() {
+        const { pokemons } = this.props;
+
+        return [...new Set(pokemons.reduce((types, { type }) => [...types, type], []))];
+    }
+
+    render() {
+        const filteredPokemons = this.fetchFilteredPokemons();
+        const pokemonTypes = this.fetchPokemonTypes();
+        const pokemon = filteredPokemons[this.state.pokemonIndex];
+
         return (
-            <div>
-                <Button evento={this.clickme} value='-1' nome='Previous' />
-                <Button evento={this.clickme} value='1' nome='Next' />
-                <div className="flexy">
-                    {pokemons.map((item, index) => <Pokemon key={index} id={item.id} 
-                    name={item.name} type={item.type} image={item.image}
-                    weight={item.averageWeight.value} unit={item.averageWeight.measurementUnit}
-                    info={item.moreInfo} />)}
+            <div className="pokedex">
+                <Pokemon pokemon={pokemon} />
+                <div className="pokedex-buttons-panel">
+                    <Button
+                        onClick={() => this.filterPokemons('all')}
+                        className="filter-button">
+                        All
+          </Button>
+                    {pokemonTypes.map(type => (
+                        <Button
+                            key={type}
+                            onClick={() => this.filterPokemons(type)}
+                            className="filter-button">
+                            {type}
+                        </Button>
+                    ))}
                 </div>
+                <Button
+                    className="pokedex-button"
+                    onClick={() => this.nextPokemon(filteredPokemons.length)}
+                    disabled={filteredPokemons.length <= 1}>
+                    Próximo pokémon
+        </Button>
             </div>
-        )
+        );
     }
 }
 
