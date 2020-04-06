@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useContext } from 'react';
+import { RedditContext } from '../contexts/RedditContext';
 
 const renderOptions = (options) => (
   options.map((option) => (
@@ -12,24 +12,23 @@ const renderOptions = (options) => (
   ))
 );
 
-const Selector = ({ value, onChange, options }) => (
-  <span>
-    <h1>{`Selected: ${value}`}</h1>
-    <select
-      onChange={(e) => onChange(e.target.value)}
-      value={value}
-    >
-      {renderOptions(options)}
-    </select>
-  </span>
-);
-
-Selector.propTypes = {
-  onChange: PropTypes.func.isRequired,
-  options: PropTypes.arrayOf(
-    PropTypes.string.isRequired,
-  ).isRequired,
-  value: PropTypes.string.isRequired,
+const Selector = () => {
+  const { subReddit, selectSubreddit } = useContext(RedditContext);
+  return (
+    <span>
+      <h1>{`Selected: ${subReddit}`}</h1>
+      <select
+        onChange={(e) => selectSubreddit(e.target.value)}
+        value={subReddit}
+      >
+        <option hidden value="Escolha uma opção">
+          Escolha uma opção
+        </option>
+        {renderOptions(['reactjs', 'frontend'])}
+      </select>
+    </span>
+  );
 };
+
 
 export default Selector;

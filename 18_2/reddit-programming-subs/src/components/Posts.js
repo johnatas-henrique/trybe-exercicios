@@ -1,17 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useContext } from 'react';
+import { RedditContext } from '../contexts/RedditContext';
 
-const Posts = ({ posts }) => (
-  <ul>
-    {posts.map(({ id, title }) => <li key={id}>{title}</li>)}
-  </ul>
-);
-
-Posts.propTypes = {
-  posts: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  })).isRequired,
+const Posts = () => {
+  const { fetchResp, subReddit } = useContext(RedditContext);
+  const correctArr = fetchResp.find((item) => item.subreddit === subReddit) || [];
+  const { posts = [] } = correctArr;
+  return (
+    <div>
+      <ul>
+        {posts.map(({ id, title }) => <li key={id}>{title}</li>)}
+      </ul>
+    </div>
+  );
 };
 
 export default Posts;
