@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function posneg(a) {
+            console.log('O valor da variável A é: ' + a);
+            if (a > 0) {
+                console.log('O valor da variável é: positive');
+                return 'positive'
+            } else if (a < 0) {
+                console.log('O valor da variável é: negative');
+                return 'negative'
+            } else if (a === 0) {
+                console.log('O valor da variável é: zero');
+                return 'zero'
+            } else {
+                console.log('Falha, talvez você não esteja digitando apenas números')
+                return 'Falha'
+            }
+        }
+        posneg(20)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let inputUser = prompt('Digite o nome da peça desejada, para ajudar, os nomes das peças são:\nking, queen, rook, bishop, knight, pawn');
+        inputUser = inputUser.toUpperCase();
+
+        switch (inputUser) {
+            case 'KING':
+                console.log("Pode mover-se em qualquer direção, porém apenas uma casa por vez.");
+                break;
+            case 'QUEEN':
+                console.log("Assim como o Rei, pode mover-se em qualquer direção (vertical, horizontal e diagonal), porém quantas casas quiser, desde que estejam livres.");
+                break;
+            case 'ROOK':
+                console.log("Move-se em linha reta, tanto na vertical quanto na horizontal, quantas casas quiser.");
+                break;
+            case 'BISHOP':
+                console.log("Move-se na diagonal, quantas casas quiser. Por conta disso, a cor da casa que um bispo começa, é considerada a cor dele, porque ele nunca poderá ir pra uma casa da outra cor.");
+                break;
+            case 'KNIGHT':
+                console.log("É a única peça que pode saltar sobre as outras peças do tabuleiro, sejam elas amigas ou inimigas. O movimento executado pelo Cavalo é conhecido por “um-dois” ou “em L”.");
+                break;
+            case 'PAWN':
+                console.log("Move-se sempre uma casa para frente, exceto no primeiro movimento, quando pode mover-se duas casas. O peão é a única peça que não pode retroceder, e também a única que efetua a captura com um movimento diferente do utilizado para avançar no tabuleiro. O peão pode capturar as peças que estejam uma fileira acima, mas nas colunas adjacentes a sua.");
+                break;
+            default:
+                console.log("Por favor, digite o nome das peças como informado nas instruções.");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

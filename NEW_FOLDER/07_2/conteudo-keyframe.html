@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        body {
+            width: 100%;
+        }
+
+        .opacidade-ex1 {
+            border: 1px solid red;
+            opacity: 0;
+            font-size: 2em;
+            animation-duration: 3s;
+            animation-name: tiraropacity;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes tiraropacity {
+            0% {
+                opacity: 0;
+                font-size: 2em;
+                color: aqua;
+                font-weight: 700;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+            60% {
+                font-size: 5em;
+            }
+
+            100% {
+                opacity: 1;
+                color: firebrick;
+                font-size: 3em;
+                font-weight: 700;
+            }
+        }
+
+        .esqtodir {
+            border: 1px solid red;
+            margin-left: 0;
+            width: max-content;
+            animation-name: esqtodir;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+        .esqtodir:hover {
+            animation-play-state: paused;
+        }
+        @keyframes esqtodir {
+            0% {
+                margin-left: 0;
+            }
+            100% {
+                margin-left: 95%;
+            }
+        }
+
+        .botao {
+            animation-delay: 5s;
+            animation-iteration-count: 3;
+            animation-name: botao;
+            animation-fill-mode: both;
+        }
+
+        @keyframes botao {
+            0% {
+                color: red;
+                font-size: 2em;
+            }
+            100% {
+                color: blue;
+                font-size: 3em;
+            }
+        }
+        
+}
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="opacidade-ex1">Mussum Lipsum</p>
+    <p class="esqtodir">Exercicio 02</p>
+    <button class="esqtodir botao">Click me!</button>
+</body>
+
+</html>
