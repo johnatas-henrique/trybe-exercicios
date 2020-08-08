@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function indiceMaior(inputUser) {
+
+            let posArray = inputUser.length;
+            let position = 0;
+            let valor = 0;
+            console.log('Números testados: ' + inputUser + ' num total de ' + inputUser.length);
+
+            for (i = 0; i < posArray; i++) {
+                if (inputUser[i] > valor) {
+                    valor = inputUser[i];
+                    position = i;
+                }
+            }
+            console.log('O maior número é o: ' + valor + ' que está na posição ' + position + ' do array.')
+            return position
+        }
+        indiceMaior([20, 3, 6, 7, 10, 12])
+    </script>
+</body>
+
+</html>

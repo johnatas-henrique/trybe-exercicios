@@ -1,0 +1,8 @@
+.flexy {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  width: 25%;
+}
