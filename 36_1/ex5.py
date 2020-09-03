@@ -1,4 +1,4 @@
-def trianguloRetangulo(numero):
+def triangulo_retangulo(numero):
     for num in range(numero):
         contador = 0
         imprime = ''
@@ -9,4 +9,4 @@ def trianguloRetangulo(numero):
     return ''
 
 
-print(trianguloRetangulo(5))
+print(triangulo_retangulo(5))
