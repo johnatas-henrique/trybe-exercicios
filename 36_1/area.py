@@ -12,6 +12,7 @@ def rectangle(base, altura):
 def circle(raio):
     return PI * raio * raio
 
+
 if __name__ == "__main__":
     print("Área do quadrado:", square(8))
     print("Área do retângulo:", rectangle(2, 2))
