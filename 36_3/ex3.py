@@ -1,6 +1,10 @@
 import random
 
-LISTA = ['JOHNATAS', 'THAWANE', 'AYRTON', 'FELIPE']
+file = open("ex3.txt", mode="r")
+content = file.read()
+file.close()
+
+LISTA = content.split()
 
 escolhida = random.choice(LISTA)
 
