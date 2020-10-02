@@ -1,0 +1,11 @@
+1)
+
+curl -X GET localhost:3000
+
+2) 
+
+curl -X POST -H 'Content-Type: application/json' -d '{ "title": "Latest updates, August 1st", "content": "The whole text for the blog post goes here in this key" }' localhost:3000/post
+
+3)
+
+curl --request POST --header 'Content-Type: application/json' --header 'Authorization: token JWT aqui' --data '{ "title": "Latest updates, August 1st", "content": "The whole text for the blog post goes here in this key" }' localhost:3000/post
