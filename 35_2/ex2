@@ -1,0 +1,5 @@
+1)
+curl google.com
+
+2)
+curl -L google.com
