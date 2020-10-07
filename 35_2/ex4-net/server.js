@@ -1,9 +1,9 @@
 const net = require('net');
 
 const server = net.createServer((socket) => {
-  socket.write('Olá, client');
+  socket.write('Olá, client\n');
 
-  socket.on('packets', (data) => console.log(data.toString()))
+  socket.on('data', (message) => console.log(message.toString()))
 })
 
 const PORT = 8085;
